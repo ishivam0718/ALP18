@@ -13,7 +13,7 @@ function signup() {
     return;
   }
 
-  fetch("http://localhost:5501/api/signup", {
+  fetch("http://https://alp18-backend.onrender.com/api/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
