@@ -1,0 +1,157 @@
+.lesson-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 24px 70px;
+}
+
+.lesson-top {
+  text-align: center;
+  padding: 42px 25px;
+  border-radius: 30px;
+  background: white;
+  border: 1px solid #cfe5f8;
+  box-shadow: 0 24px 55px rgba(15,23,42,.08);
+}
+
+.lesson-top h1 {
+  margin-top: 18px;
+  font-size: 44px;
+}
+
+.lesson-top p {
+  max-width: 780px;
+  margin: 15px auto 0;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.lesson-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.lesson-content {
+  display: grid;
+  gap: 20px;
+}
+
+.content-card {
+  padding: 30px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid #cfe5f8;
+  box-shadow: 0 15px 35px rgba(15,23,42,.06);
+}
+
+.content-card h2 {
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.content-card p,
+.content-card li,
+#lessonBody {
+  color: #475569;
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+.content-card ul {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+#lessonBody p {
+  margin-bottom: 13px;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 22px;
+  border-radius: 16px;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+.practice-box {
+  background:
+    radial-gradient(circle at top right,rgba(56,189,248,.15),transparent 35%),
+    white;
+}
+
+.lesson-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.lesson-sidebar .sidebar-card {
+  position: sticky;
+  top: 95px;
+}
+
+.lesson-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#completeButton,
+.course-button {
+  border: 0;
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#completeButton {
+  color: white;
+  background: linear-gradient(135deg,#2563eb,#38bdf8);
+}
+
+#completeButton.completed {
+  background: #16a34a;
+}
+
+.course-button {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+@media(max-width:850px) {
+
+  .lesson-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-sidebar .sidebar-card {
+    position: static;
+  }
+
+}
+
+@media(max-width:600px) {
+
+  .lesson-container {
+    padding: 25px 15px 50px;
+  }
+
+  .lesson-top {
+    padding: 30px 20px;
+  }
+
+  .lesson-top h1 {
+    font-size: 32px;
+  }
+
+  .content-card {
+    padding: 23px;
+  }
+
+}

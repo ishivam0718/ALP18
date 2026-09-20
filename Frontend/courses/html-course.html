@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML Course — Access Learning Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/course.css">
+</head>
+
+<body>
+
+  <nav class="course-nav">
+
+    <a class="back-link" href="../04-dashboard.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      Dashboard
+    </a>
+
+    <div class="course-brand">
+      <img src="../images/logo.png" alt="ALP18">
+      <span>Access Learning Platform</span>
+    </div>
+
+    <div class="course-user">
+      <span id="courseUser">Student</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+  </nav>
+
+  <main class="course-container">
+
+    <section class="course-hero">
+
+      <div class="hero-content">
+
+        <span class="course-badge">
+          <i class="fa-brands fa-html5"></i>
+          Frontend Development
+        </span>
+
+        <h1>HTML Fundamentals</h1>
+
+        <p>
+          Learn HTML from the beginning and build a strong
+          foundation for modern web development.
+        </p>
+
+        <div class="course-meta">
+
+          <span>
+            <i class="fa-solid fa-book"></i>
+            10 Lessons
+          </span>
+
+          <span>
+            <i class="fa-solid fa-signal"></i>
+            Beginner
+          </span>
+
+          <span>
+            <i class="fa-solid fa-clock"></i>
+            Self-paced
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="course-progress-card">
+
+        <div class="progress-top">
+          <strong>Your Progress</strong>
+          <span id="coursePercent">0%</span>
+        </div>
+
+        <div class="course-progress">
+          <div id="courseProgressFill"></div>
+        </div>
+
+        <p>
+          <span id="completedCount">0</span>
+          of 10 lessons completed
+        </p>
+
+      </div>
+
+    </section>
+
+    <section class="course-layout">
+
+      <div class="lesson-list-area">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="small-label">COURSE CONTENT</span>
+            <h2>HTML Course Lessons</h2>
+          </div>
+
+          <span class="lesson-count" id="lessonCount">
+            0/10
+          </span>
+
+        </div>
+
+        <div id="lessonList" class="lesson-list"></div>
+
+      </div>
+
+      <aside class="course-sidebar">
+
+        <div class="sidebar-card">
+
+          <i class="fa-solid fa-route"></i>
+
+          <h3>Learning Path</h3>
+
+          <p>
+            Complete the lessons one by one.
+            Your progress is saved automatically.
+          </p>
+
+        </div>
+
+        <div class="sidebar-card">
+
+          <i class="fa-solid fa-code"></i>
+
+          <h3>What you'll learn</h3>
+
+          <ul>
+            <li>HTML structure</li>
+            <li>Text and links</li>
+            <li>Images and lists</li>
+            <li>Tables and forms</li>
+            <li>Semantic HTML</li>
+            <li>HTML5 basics</li>
+          </ul>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <script src="../js/course.js"></script>
+
+</body>
+</html>

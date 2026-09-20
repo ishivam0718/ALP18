@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard — Access Learning Platform</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="dashboard.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="ALP18 Logo"
+                >
+
+                <span>ALP18</span>
+            </a>
+
+
+            <!-- Profile -->
+            <div class="nav-profile">
+
+                <div class="profile-info">
+
+                    <div
+                        class="avatar"
+                        id="avatar"
+                    >
+                        U
+                    </div>
+
+                    <div class="profile-text">
+
+                        <strong id="username">
+                            User
+                        </strong>
+
+                        <span id="email">
+                            user@email.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()"
+                    title="Logout"
+                >
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>Logout</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="dashboard-hero">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    Welcome to ALP18
+                </span>
+
+
+                <h1>
+                    Learn technology.
+                    <br>
+
+                    <span>Build your future.</span>
+                </h1>
+
+
+                <p>
+                    Learn coding, explore modern technologies,
+                    build real projects and grow your technical skills
+                    — all in one place.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        href="courses/html-course.html"
+                        class="primary-btn"
+                    >
+                        <i class="fa-solid fa-play"></i>
+
+                        Continue Learning
+                    </a>
+
+
+                    <a
+                        href="#tech-learning-hub"
+                        class="secondary-btn"
+                    >
+                        Explore Resources
+
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="quick-actions-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Quick Actions
+                </h2>
+
+                <p>
+                    Jump directly to what you need.
+                </p>
+
+            </div>
+
+
+            <div class="quick-actions-grid">
+
+
+                <!-- Continue Learning -->
+
+                <a
+                    href="courses/html-course.html"
+                    class="quick-action"
+                >
+
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Continue Learning
+                        </h3>
+
+                        <p>
+                            Continue your learning journey.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+                </a>
+
+
+
+                <!-- My Notes -->
+
+                <a
+                    href="#my-notes"
+                    class="quick-action"
+                >
+
+                    <div class="quick-icon">
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            My Notes
+                        </h3>
+
+                        <p>
+                            Create and manage your notes.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Project Ideas -->
+
+                <a
+                    href="#project-section"
+                    class="quick-action"
+                >
+
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Project Ideas
+                        </h3>
+
+                        <p>
+                            Find ideas and build projects.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Learning Hub -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="quick-action"
+                >
+
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Learning Hub
+                        </h3>
+
+                        <p>
+                            Explore technical resources.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROGRESS ================= -->
+
+        <section class="progress-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Your Progress
+                </h2>
+
+                <p>
+                    Keep learning and keep moving forward.
+                </p>
+
+            </div>
+
+
+            <div class="progress-card">
+
+                <div class="progress-top">
+
+                    <div>
+
+                        <span class="progress-label">
+                            Learning Progress
+                        </span>
+
+                        <h3>
+                            <span id="progressPercent">
+                                0%
+                            </span>
+                            completed
+                        </h3>
+
+                    </div>
+
+
+                    <div class="progress-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="progressFill"
+                        style="width: 0%;"
+                    ></div>
+
+                </div>
+
+
+                <div class="progress-stats">
+
+                    <div>
+                        <strong id="completedLessons">
+                            0
+                        </strong>
+
+                        <span>
+                            Completed
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <strong id="remainingLessons">
+                            10
+                        </strong>
+
+                        <span>
+                            Remaining
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MY LEARNING TOOLS ================= -->
+
+        <section class="learning-tools-section">
+
+            <div class="section-title">
+
+                <h2>
+                    My Learning Tools
+                </h2>
+
+                <p>
+                    Everything you need to learn, build and grow.
+                </p>
+
+            </div>
+
+
+            <div class="learning-tools-grid">
+
+
+                <!-- My Notes -->
+
+                <a
+                    href="#my-notes"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            My Notes
+                        </h3>
+
+                        <p>
+                            Write, save and manage your personal
+                            study notes.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Learning Hub -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            Learning Hub
+                        </h3>
+
+                        <p>
+                            Explore curated resources for
+                            different technologies.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Project Ideas -->
+
+                <a
+                    href="#project-section"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            Project Ideas
+                        </h3>
+
+                        <p>
+                            Find ideas to build projects and
+                            strengthen your portfolio.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Career Prep -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            Career Prep
+                        </h3>
+
+                        <p>
+                            Explore internships, jobs and
+                            career-building resources.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+
+
+                <!-- AI Resources -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            AI Resources
+                        </h3>
+
+                        <p>
+                            Discover AI, machine learning and
+                            useful AI tools.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+
+
+                <!-- Coding & DSA -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="learning-tool-card"
+                >
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div class="tool-content">
+
+                        <h3>
+                            Coding & DSA
+                        </h3>
+
+                        <p>
+                            Practice programming, DSA and
+                            technical interview skills.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right tool-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= EXPLORE LEARNING AREAS ================= -->
+
+        <section class="explore-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Explore Learning Areas
+                </h2>
+
+                <p>
+                    Choose a technology and start learning.
+                </p>
+
+            </div>
+
+
+            <div class="explore-grid">
+
+
+                <!-- Frontend -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>
+                        Frontend
+                    </h3>
+
+                    <p>
+                        HTML, CSS, JavaScript,
+                        React and modern web development.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Backend -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+
+                    <h3>
+                        Backend
+                    </h3>
+
+                    <p>
+                        APIs, servers, databases,
+                        Node.js and backend development.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Full Stack -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <h3>
+                        Full Stack
+                    </h3>
+
+                    <p>
+                        Learn frontend and backend
+                        development together.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Software -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>
+                        Software Development
+                    </h3>
+
+                    <p>
+                        Programming, development tools
+                        and software engineering.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- AI -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
+
+                    <p>
+                        Explore AI concepts, tools,
+                        models and applications.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Data Science -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+                    <h3>
+                        Data Science
+                    </h3>
+
+                    <p>
+                        Data analysis, visualization,
+                        Python and analytics.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Cybersecurity -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>
+                        Cybersecurity
+                    </h3>
+
+                    <p>
+                        Security, networking,
+                        web security and ethical hacking.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- AI/ML Resources -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>
+                        AI / ML Resources
+                    </h3>
+
+                    <p>
+                        Machine learning, deep learning
+                        and AI learning resources.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Internships -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>
+                        Internships
+                    </h3>
+
+                    <p>
+                        Find internships, opportunities
+                        and career resources.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Programming Practice -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+
+                    <h3>
+                        Programming Practice
+                    </h3>
+
+                    <p>
+                        Coding platforms and programming
+                        practice resources.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Interview Preparation -->
+
+                <a
+                    href="#tech-learning-hub"
+                    class="explore-card"
+                >
+
+                    <div class="explore-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+
+                    <h3>
+                        Interview Preparation
+                    </h3>
+
+                    <p>
+                        DSA, coding interviews and
+                        technical preparation.
+                    </p>
+
+                    <span>
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECT IDEAS ================= -->
+
+        <section
+            class="project-section"
+            id="project-section"
+        >
+
+            <div class="section-title">
+
+                <h2>
+                    Project Ideas
+                </h2>
+
+                <p>
+                    Turn what you learn into something real.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <h3>
+                        Web Projects
+                    </h3>
+
+                    <p>
+                        Build websites, dashboards,
+                        portfolios and web applications.
+                    </p>
+
+                    <span>
+                        Frontend & Full Stack
+                    </span>
+
+                </div>
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <h3>
+                        AI Projects
+                    </h3>
+
+                    <p>
+                        Create practical AI applications
+                        using modern AI technologies.
+                    </p>
+
+                    <span>
+                        AI & Machine Learning
+                    </span>
+
+                </div>
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>
+                        Data Projects
+                    </h3>
+
+                    <p>
+                        Work with datasets, analytics,
+                        dashboards and visualizations.
+                    </p>
+
+                    <span>
+                        Data Science
+                    </span>
+
+                </div>
+
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>
+                        Cybersecurity Projects
+                    </h3>
+
+                    <p>
+                        Explore security concepts,
+                        networking and practical tools.
+                    </p>
+
+                    <span>
+                        Cybersecurity
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MY NOTES ================= -->
+
+        <section
+            class="notes-section"
+            id="my-notes"
+        >
+
+            <div class="section-title">
+
+                <h2>
+                    My Notes
+                </h2>
+
+                <p>
+                    Save important concepts, ideas and study material.
+                </p>
+
+            </div>
+
+
+            <div class="notes-container">
+
+
+                <!-- Note Editor -->
+
+                <div class="note-editor">
+
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Note title"
+                        maxlength="100"
+                    >
+
+
+                    <textarea
+                        id="noteContent"
+                        placeholder="Write your note here..."
+                    ></textarea>
+
+
+                    <div class="note-actions">
+
+                        <button
+                            type="button"
+                            onclick="saveNote()"
+                        >
+                            <i class="fa-solid fa-floppy-disk"></i>
+
+                            Save Note
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="clear-note-btn"
+                            onclick="clearNoteEditor()"
+                        >
+                            Clear
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Saved Notes -->
+
+                <div class="saved-notes">
+
+                    <div class="saved-notes-header">
+
+                        <h3>
+                            Saved Notes
+                        </h3>
+
+                        <span id="notesCount">
+                            0 Notes
+                        </span>
+
+                    </div>
+
+
+                    <div id="notesList">
+
+                        <div class="empty-notes">
+
+                            <i class="fa-regular fa-note-sticky"></i>
+
+                            <h3>
+                                No notes yet
+                            </h3>
+
+                            <p>
+                                Your saved notes will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TECH LEARNING HUB ================= -->
+
+        <section
+            class="tech-learning-hub"
+            id="tech-learning-hub"
+        >
+
+            <div class="section-title">
+
+                <h2>
+                    Tech Learning Hub
+                </h2>
+
+                <p>
+                    Explore useful learning platforms,
+                    documentation and developer resources.
+                </p>
+
+            </div>
+
+
+            <div id="techCategories">
+
+                <!-- Categories are loaded using dashboard.js -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="dashboard-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="dashboard.html"
+                    class="logo"
+                >
+
+                    <img
+                        src="images/logo.png"
+                        alt="ALP18 Logo"
+                    >
+
+                    <span>
+                        ALP18
+                    </span>
+
+                </a>
+
+                <p>
+                    Learn tech without confusion.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#project-section">
+                    Projects
+                </a>
+
+                <a href="#my-notes">
+                    Notes
+                </a>
+
+                <a href="#tech-learning-hub">
+                    Learning Hub
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Access Learning Platform.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= GO TO TOP ================= -->
+
+    <button
+        class="go-top-btn"
+        id="goTopBtn"
+        onclick="goToTop()"
+        title="Go to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- ================= DASHBOARD JS ================= -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
