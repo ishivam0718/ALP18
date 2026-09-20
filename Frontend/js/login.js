@@ -8,7 +8,7 @@ function login() {
     return;
   }
 
-  fetch("http://https://alp18-backend.onrender.com/api/login", {
+  fetch("https://alp18-backend.onrender.com/api/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -71,7 +71,7 @@ function handleGoogleCredential(response) {
     return;
   }
 
-  fetch("http://https://alp18-backend.onrender.com/api/google-login", {
+  fetch("https://alp18-backend.onrender.com/api/google-login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

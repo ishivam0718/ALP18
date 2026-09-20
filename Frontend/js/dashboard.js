@@ -1,4 +1,4 @@
-const API_BASE = "http://https://alp18-backend.onrender.com";
+const API_BASE = "https://alp18-backend.onrender.com";
 
 const token = localStorage.getItem("token");
 
